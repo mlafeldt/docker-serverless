@@ -10,6 +10,7 @@ Includes:
 
 * `serverless` command-line tool
 * `serverless-domain-manager` plugin for creating custom domain names
+* `make` for build automation
 * `tini` init system to make the `serverless` tool work well in Docker
 
 ## Usage

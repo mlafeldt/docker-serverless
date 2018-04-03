@@ -4,7 +4,7 @@ MAINTAINER Mathias Lafeldt <mathias.lafeldt@gmail.com>
 
 RUN apk update \
     && apk upgrade \
-    && apk add bash tini \
+    && apk add bash make tini \
     && npm install -g serverless serverless-domain-manager \
     && rm -rf /var/cache/apk/*
 
