@@ -9,6 +9,8 @@ RUN apk update \
     && npm install -g serverless serverless-domain-manager \
     && rm -rf /var/cache/apk/*
 
+ENV NODE_PATH /usr/local/lib/node_modules
+
 WORKDIR /service
 
 ENTRYPOINT ["serverless"]
