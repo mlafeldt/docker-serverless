@@ -11,7 +11,7 @@ Dockerized [Serverless CLI](https://serverless.com/framework/docs/providers/aws/
 Run this inside your Serverless service:
 
 ```bash
-docker run -it --init --rm -v "$PWD:/service" \
+docker run -it --rm -v "$PWD:/service" \
     -e AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID" \
     -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" \
     -e AWS_REGION="$AWS_REGION" \
