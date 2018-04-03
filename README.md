@@ -4,7 +4,14 @@
 [![](https://quay.io/repository/mlafeldt/serverless/status)](https://quay.io/repository/mlafeldt/serverless)
 [![](https://img.shields.io/docker/pulls/mlafeldt/serverless.svg?maxAge=604800)](https://hub.docker.com/r/mlafeldt/serverless/)
 
-Dockerized [Serverless CLI](https://serverless.com/framework/docs/providers/aws/cli-reference/)
+Dockerized Serverless CLI.
+
+Includes:
+
+* `serverless` command-line tool
+* `serverless-domain-manager` plugin for creating custom domain names
+* `aws` command-line tool for debugging
+* `tini` init system to make the `serverless` tool work well in Docker
 
 ## Usage
 
