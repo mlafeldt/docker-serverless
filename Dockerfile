@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:9-alpine
 
 MAINTAINER Mathias Lafeldt <mathias.lafeldt@gmail.com>
 
