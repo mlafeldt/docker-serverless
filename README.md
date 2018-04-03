@@ -15,7 +15,13 @@ Includes:
 
 ## Usage
 
-Run this inside your Serverless service:
+Pull the latest Docker image:
+
+```bash
+docker pull mlafeldt/serverless
+```
+
+Run this inside the directory of your Serverless service:
 
 ```bash
 docker run -it --rm -v "$PWD:/service" \
