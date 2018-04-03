@@ -10,7 +10,6 @@ Includes:
 
 * `serverless` command-line tool
 * `serverless-domain-manager` plugin for creating custom domain names
-* `aws` command-line tool for debugging
 * `tini` init system to make the `serverless` tool work well in Docker
 
 ## Usage
@@ -28,7 +27,6 @@ docker run -it --rm -v "$PWD:/service" \
     -e AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID" \
     -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" \
     -e AWS_REGION="$AWS_REGION" \
-    -e AWS_DEFAULT_REGION="$AWS_DEFAULT_REGION" \
     mlafeldt/serverless <command>
 ```
 
