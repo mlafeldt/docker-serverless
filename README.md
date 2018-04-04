@@ -4,7 +4,7 @@
 [![](https://quay.io/repository/mlafeldt/serverless/status)](https://quay.io/repository/mlafeldt/serverless)
 [![](https://img.shields.io/docker/pulls/mlafeldt/serverless.svg?maxAge=604800)](https://hub.docker.com/r/mlafeldt/serverless/)
 
-Dockerized Serverless CLI.
+A Docker image for [Serverless](https://serverless.com/framework/) development & deployment.
 
 Includes:
 
