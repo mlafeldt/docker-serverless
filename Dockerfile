@@ -4,7 +4,8 @@ MAINTAINER Mathias Lafeldt <mathias.lafeldt@gmail.com>
 
 RUN apk update \
     && apk upgrade \
-    && apk add bash make tini \
+    && apk add bash make py-pip tini \
+    && pip install awscli \
     && npm install -g serverless serverless-domain-manager \
     && rm -rf /var/cache/apk/*
 
