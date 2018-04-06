@@ -30,7 +30,7 @@ docker run -it --rm -v "$PWD:/service" \
     -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" \
     -e AWS_REGION="$AWS_REGION" \
     -e AWS_DEFAULT_REGION="$AWS_DEFAULT_REGION" \
-    mlafeldt/serverless [sls | aws | make | ...]
+    mlafeldt/serverless <command>
 ```
 
 ## Author
