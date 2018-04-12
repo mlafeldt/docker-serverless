@@ -21,5 +21,5 @@ ENV NODE_PATH /usr/local/lib/node_modules
 
 WORKDIR /service
 
-COPY assume-role /
-ENTRYPOINT ["/sbin/tini", "--", "/assume-role", "serverless"]
+COPY assume-role /usr/local/bin/
+ENTRYPOINT ["/sbin/tini", "--", "assume-role", "serverless"]
