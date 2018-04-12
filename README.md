@@ -6,13 +6,14 @@
 
 A Docker image for [Serverless](https://serverless.com/framework/) development & deployment.
 
-Includes:
+Features:
 
 * `serverless` command-line tool
 * `serverless-domain-manager` plugin for creating custom domain names
 * `aws` command-line tool for scripting/debugging
 * `make` for build automation
 * `tini` init system to make the `serverless` tool work well in Docker
+* Automatically assume the IAM role specified by the `AWS_ROLE` environment variable
 
 ## Usage
 

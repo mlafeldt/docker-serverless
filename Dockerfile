@@ -7,6 +7,7 @@ RUN apk update \
     && apk add \
         bash \
         ca-certificates \
+        jq \
         make \
         py-pip \
         tini \
@@ -20,4 +21,5 @@ ENV NODE_PATH /usr/local/lib/node_modules
 
 WORKDIR /service
 
-ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/serverless"]
+COPY assume-role /
+ENTRYPOINT ["/sbin/tini", "--", "/assume-role", "serverless"]
