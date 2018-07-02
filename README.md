@@ -9,7 +9,7 @@ A Docker image for [Serverless](https://serverless.com/framework/) development &
 Features:
 
 * `serverless` command-line tool
-* `serverless-domain-manager` plugin for creating custom domain names
+* Some `serverless` plugins, see [Dockerfile](Dockerfile)
 * `aws` command-line tool for scripting/debugging
 * `make` for build automation
 * `tini` init system to make the `serverless` tool work well in Docker

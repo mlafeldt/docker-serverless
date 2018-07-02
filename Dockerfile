@@ -2,7 +2,7 @@ FROM node:9-alpine
 
 MAINTAINER Mathias Lafeldt <mathias.lafeldt@gmail.com>
 
-ENV REFRESHED_AT 2018-05-08
+ENV REFRESHED_AT 2018-07-02
 
 RUN apk update \
     && apk upgrade \
@@ -18,6 +18,8 @@ RUN apk update \
     && npm install -g \
         serverless \
         serverless-domain-manager \
+        serverless-plugin-bind-deployment-id \
+        serverless-pseudo-parameters \
     && rm -rf /var/cache/apk/*
 
 ENV NODE_PATH /usr/local/lib/node_modules
