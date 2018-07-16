@@ -2,7 +2,7 @@ FROM node:9-alpine
 
 MAINTAINER Mathias Lafeldt <mathias.lafeldt@gmail.com>
 
-ENV REFRESHED_AT 2018-07-02
+ENV REFRESHED_AT 2018-07-16
 
 RUN apk update \
     && apk upgrade \
