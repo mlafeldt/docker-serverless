@@ -14,3 +14,6 @@ shell: build
 		-e AWS_REGION=$(AWS_REGION) \
 		-e AWS_DEFAULT_REGION=$(AWS_DEFAULT_REGION) \
 		$(IMAGE)
+
+version:
+	docker run -it --rm $(IMAGE) version
